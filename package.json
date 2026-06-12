@@ -1,5 +1,5 @@
 {
-  "name": "its-cicd-demo",
+  "name": "ashdew",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": { "start": "node app.js" }
