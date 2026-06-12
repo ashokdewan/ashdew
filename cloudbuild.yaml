@@ -5,9 +5,9 @@ steps:
     args:
       - build
       - -t
-      - us-central1-docker.pkg.dev/$PROJECT_ID/its-repo/its-app:$SHORT_SHA
+      - us-central1-docker.pkg.dev/$PROJECT_ID/ashok-repo/its-app:$SHORT_SHA
       - -t
-      - us-central1-docker.pkg.dev/$PROJECT_ID/its-repo/its-app:latest
+      - us-central1-docker.pkg.dev/$PROJECT_ID/ashok-repo/its-app:latest
       - .
 
   # Step 2: Push both tags to Artifact Registry
@@ -16,7 +16,7 @@ steps:
     args:
       - push
       - --all-tags
-      - us-central1-docker.pkg.dev/$PROJECT_ID/its-repo/its-app
+      - us-central1-docker.pkg.dev/$PROJECT_ID/ashok-repo/its-app
 
   # Step 3: Print build info
   - name: 'gcr.io/cloud-builders/gcloud'
