@@ -16,7 +16,7 @@ steps:
     args:
       - push
       - --all-tags
-      - us-central1-docker.pkg.dev/$PROJECT_ID/ashdew-repo/its-app
+      - us-central1-docker.pkg.dev/$PROJECT_ID/ashdew-repo/its-app:$SHORT_SHA
 
   # Step 3: Print build info
   - name: 'gcr.io/cloud-builders/gcloud'
