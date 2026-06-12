@@ -29,11 +29,11 @@ steps:
         echo "Commit: $SHORT_SHA"
         echo "Branch: $BRANCH_NAME"
         echo "Repo:   $REPO_NAME"
-        echo "Image:  us-central1-docker.pkg.dev/$PROJECT_ID/its-repo/its-app:$SHORT_SHA"
+        echo "Image:  us-central1-docker.pkg.dev/$PROJECT_ID/ashok-repo/its-app:$SHORT_SHA"
 
 images:
-  - us-central1-docker.pkg.dev/$PROJECT_ID/its-repo/its-app:$SHORT_SHA
-  - us-central1-docker.pkg.dev/$PROJECT_ID/its-repo/its-app:latest
+  - us-central1-docker.pkg.dev/$PROJECT_ID/ashok-repo/its-app:$SHORT_SHA
+  - us-central1-docker.pkg.dev/$PROJECT_ID/ashok-repo/its-app:latest
 
 options:
   logging: CLOUD_LOGGING_ONLY
